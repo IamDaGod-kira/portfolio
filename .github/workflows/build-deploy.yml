@@ -36,7 +36,7 @@ jobs:
 
   deploy:
     name: Deploy
-    needs: build
+    needs: production-files
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
