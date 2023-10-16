@@ -12,3 +12,5 @@ To see it working go [here](https://pritam-4efd0.web.app/)
 - `format`: Formats the code according to the defined style guide.
 
 Feel free to add or modify these scripts to suit your specific needs.
+
+**_Do Not Modify this project._**

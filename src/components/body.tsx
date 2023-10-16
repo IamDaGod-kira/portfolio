@@ -13,6 +13,14 @@ export default function Body() {
           bots
         </p>
         <p>you can hire me for the following, but I only take crypto</p>
+        <br />
+        <hr />
+        <br />
+        <blockquote className="p-6 rounded-lg shadow-md bg-white">
+          <i className="text-4xl text-gray-600 mb-4 leading-none">"</i>
+          <p className="text-lg text-gray-800">Your quote goes here.</p>
+          <i className="text-4xl text-gray-600 mt-4 leading-none">"</i>
+        </blockquote>
       </div>
     </React.Fragment>
   );
