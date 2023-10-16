@@ -1,54 +1,37 @@
-name: Build & deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
 
 jobs:
-  build:
-    name: Build
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Installing Node.js
-        uses: actions/setup-node@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 16.x
+          node-version: 16
 
-      - name: Installing NPM packages
-        run: npm ci
+      - name: Install dependencies
+        run: npm install
 
-      - name: Building project
+      - name: Build React app
         run: npm run build
 
-      - name: Uploading production-ready build files
-        uses: actions/upload-artifact@v2
-        with:
-          name: production-files
-          path: ./build
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Downloading artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: production-files
-          path: ./build
-
-      - name: Deploying to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+      - name: Deploy to GitHub Pages
+        run: |
+          git config user.name ${{ secrets.GITHUB_USER }}
+          git config user.email ${{ secrets.GITHUB_EMAIL }}
+          git checkout --orphan gh-pages
+          git --work-tree build add --all
+          git --work-tree build commit -m "GitHub Pages Deployment"
+          git push origin HEAD:gh-pages --force
+        env:
+          GITHUB_USER: ${{ secrets.GITHUB_USER }}
+          GITHUB_EMAIL: ${{ secrets.GITHUB_EMAIL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
