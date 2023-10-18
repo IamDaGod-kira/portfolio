@@ -27,7 +27,14 @@ export default function Body() {
         <h3>Why do I do what I do ?</h3>
         <p>
           There is a reason behind it. Now a days, this skill is a very useful
-          one, and one can use this for making many good things.
+          one, and one can use this for making many good things. As we have
+          already reached the 21st century, the near future would treasure this
+          skill..
+        </p>
+        <h3>What can I do for you?</h3>
+        <p>
+          I can develop a react app for you, or go with simple html css, or even
+          get you with ubuntu and hacking etc...
         </p>
       </div>
     </React.Fragment>
