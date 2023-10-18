@@ -17,12 +17,18 @@ export default function Body() {
         <hr />
         <br />
         <blockquote className="p-6 rounded-lg shadow-md bg-transparent">
-          <i className="text-4xl text-gray-600 mb-4 leading-none">"</i>
-          <p className="text-lg text-gray-800">It's not what you do, but how you do it.</p>
-          <i className="text-4xl text-gray-600 mt-4 leading-none">"</i>
+          <i className="text-4xl text-gray-100 mb-4 leading-none">"</i>
+          <p className="text-lg text-gray-800">
+            It's not what you do, but how you do it.
+          </p>
+          <i className="text-4xl text-gray-100 mt-4 leading-none">"</i>
         </blockquote>
+        <br />
         <h3>Why do I do what I do ?</h3>
-        <p>There is a reason behind it. Now a days, this skill is a very useful one, and one can use this for making many good things.</p>
+        <p>
+          There is a reason behind it. Now a days, this skill is a very useful
+          one, and one can use this for making many good things.
+        </p>
       </div>
     </React.Fragment>
   );
