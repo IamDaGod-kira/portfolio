@@ -1,6 +1,9 @@
 import React from 'react';
+const all = require('everyday-fun');
 
 export default function Body() {
+  const quote = all.getRandomQuote();
+
   return (
     <React.Fragment>
       <div>
@@ -18,10 +21,9 @@ export default function Body() {
         <br />
         <blockquote className="p-6 rounded-lg shadow-md bg-[#333]">
           <i className="text-4xl text-gray-600 mb-4 leading-none">"</i>
-          <p className="text-lg text-[#4078c0]">
-            It's not what you do, but how you do it.
-          </p>
+          <p className="text-lg text-[#4078c0]">{quote.quote}</p>
           <i className="text-4xl text-gray-600 mt-4 leading-none">"</i>
+          <p>by {quote.author}</p>
         </blockquote>
         <br />
         <h3 className="text-xl text-white">Why do I do what I do ?</h3>
