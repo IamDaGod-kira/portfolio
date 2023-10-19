@@ -26,15 +26,28 @@ export default function Body() {
         <br />
         <h3 className="text-xl text-white">Why do I do what I do ?</h3>
         <p>
-          There is a reason behind it. Now a days, this skill is a very useful
-          one, and one can use this for making many good things. As we have
-          already reached the 21st century, the near future would treasure this
-          skill..
+          I am passionate about creating innovative solutions and pushing the
+          boundaries of technology. My journey as a developer began with a
+          fascination for Node.js, React.js, and C++, and has since evolved into
+          a commitment to delivering secure and efficient software. Hacking and
+          Discord have opened up new avenues for me to explore the digital
+          world. I thrive on the challenge of developing cutting-edge
+          applications and using my skills to protect digital landscapes. My
+          choice to exclusively accept cryptocurrency reflects my belief in the
+          future of decentralized finance and the importance of privacy in our
+          increasingly connected world.
         </p>
         <h3 className="text-white text-xl">What can I do for you?</h3>
         <p>
-          I can develop a react app for you, or go with simple html css, or even
-          get you with ubuntu and hacking etc...
+          I offer a range of services tailored to your software development
+          needs. Whether you need a Node.js or React.js web application, a
+          high-performance C++ program, or assistance with securing your digital
+          assets, I have the expertise to deliver. My knowledge in hacking and
+          Discord can be harnessed for various projects, from penetration
+          testing to creating custom Discord bots. I am committed to ensuring
+          the highest quality in every project I undertake. By accepting
+          cryptocurrency, I prioritize your privacy and security throughout our
+          collaboration.
         </p>
       </div>
     </React.Fragment>
