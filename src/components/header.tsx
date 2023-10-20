@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from '../assets/profilePic.jpg';
+import PopupOnHover from './hover';
 
 export default function Header() {
   return (
     <>
-      <div className="flex">
+      <div className="flex bg-[#333]">
         <div className="w-1/6">
           <img
             src={logo}
@@ -13,20 +14,24 @@ export default function Header() {
           />
         </div>
         <div className="w-3/6">
-          <h2 className="p-4 text-xl desktop:p-12 desktop:text-3xl">
+          <h2 className="p-4 text-xl desktop:p-12 text-[#4078c0] desktop:text-3xl">
             Pritam santra
           </h2>
         </div>
-        <div className="w-1/6 p-4 text-xl desktop:p-12 desktop:text-3xl">
-          <a href="https://github.com/IamDaGod-kira/">
-            <i className="fab fa-github"></i>
-          </a>
-        </div>
-        <div className="w-1/6 p-4 text-xl desktop:p-12 desktop:text-3xl">
-          <a href="https://github.com/IamDaGod-kira/">
-            <i className="fab fa-github"></i>
-          </a>
-        </div>
+        <PopupOnHover content="My Github">
+          <div className="w-1/6 p-4 text-xl text-[#4078c0] desktop:p-12 desktop:text-3xl">
+            <a href="https://github.com/IamDaGod-kira/">
+              <i className="fab fa-github"></i>
+            </a>
+          </div>
+        </PopupOnHover>
+        <PopupOnHover content="contact me">
+          <div className="w-1/6 p-4 text-xl text-[#4078c0] desktop:p-12 desktop:text-3xl">
+            <a href="https://github.com/IamDaGod-kira/">
+              <i className="fas fa-mobile-alt"></i>
+            </a>
+          </div>
+        </PopupOnHover>
       </div>
     </>
   );

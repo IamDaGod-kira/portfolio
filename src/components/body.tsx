@@ -19,9 +19,9 @@ export default function Body() {
         <br />
         <hr />
         <br />
-        <blockquote className="p-6 rounded-lg shadow-md bg-[#333]">
+        <blockquote className="p-6 rounded-lg shadow-md bg-white">
           <i className="text-4xl text-gray-600 mb-4 leading-none">"</i>
-          <p className="text-lg text-[#4078c0]">{quote.quote}</p>
+          <p className="text-lg text-blue-600">{quote.quote}</p>
           <i className="text-4xl text-gray-600 mt-4 leading-none">"</i>
           <p>by {quote.author}</p>
         </blockquote>
