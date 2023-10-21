@@ -9,7 +9,7 @@ export default function Header() {
         <div className="w-1/6">
           <img
             src={logo}
-            className="rounded-full h-14 desktop:p-2 desktop:h-18"
+            className="rounded-full h-full desktop:p-2 desktop:h-3/4"
             alt="logo"
           />
         </div>
@@ -27,8 +27,8 @@ export default function Header() {
         </PopupOnHover>
         <PopupOnHover content="contact me">
           <div className="w-1/6 p-4 text-xl text-[#4078c0] desktop:p-12 desktop:text-3xl">
-            <a href="https://github.com/IamDaGod-kira/">
-              <i className="fas fa-mobile-alt"></i>
+            <a href="https://discord.com/invite/b7cbxXKqdJ">
+              <i class="fab fa-discord"></i>
             </a>
           </div>
         </PopupOnHover>
