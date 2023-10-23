@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write ./* --config ./.prettierrc.json"
+    "format": "prettier --write ./* --config ./.prettierrc.json --ignore-path ./.prettierignore"
   },
   "eslintConfig": {
     "extends": [

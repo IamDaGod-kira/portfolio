@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/header';
 import Body from './components/body';
 import GitHubRepoList from './components/ghRepos';
+import Stars from './components/stars';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Body />
       <br />
       <GitHubRepoList />
+      <Stars />
     </div>
   );
 }
