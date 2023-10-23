@@ -14,3 +14,4 @@ To see it working go [here](https://pritam-4efd0.web.app/)
 Feel free to add or modify these scripts to suit your specific needs.
 
 **_Do Not Modify this project._**
+To see a dev only working of this project, go [here](https://iamdagod-kira.github.io/portfolio/)
