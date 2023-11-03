@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Installing Node.js
-        uses: actions/secheckout@v3
+        uses: actions/checkout@v3
         with:
           node-version: 16.x
 
