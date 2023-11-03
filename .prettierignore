@@ -1,6 +1,6 @@
 *.nix
 LICENSE
-* pem
+*.pem
 .gitignore
 # Logs
 logs
