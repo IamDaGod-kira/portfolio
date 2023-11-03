@@ -22,7 +22,7 @@ export default function Stars() {
     <>
       <a href="https://github.com/iamdagod-kira/portfolio/">
         <div className="fixed text-center bottom-0 right-0 p-4 m-4 bg-gray-900 text-white rounded-full">
-          <i class="far fa-star"></i> <br />
+          <i className="far fa-star"></i> <br />
           {stars}
         </div>
       </a>

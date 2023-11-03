@@ -7,13 +7,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-blue-700 to-purple-500">
-      <Header />
-      <br />
-      <Body />
-      <br />
-      <GitHubRepoList />
-      <Stars />
+    <div className="bg-gradient-to-br from-blue-700 to-purple-500"><Header /> <br /> <Body />  <br /><GitHubRepoList /> <Stars />
     </div>
   );
 }
