@@ -3,7 +3,7 @@ name: Format with Prettier
 on:
   push:
     branches:
-      - '*'
+      - master
 
 jobs:
   format:
@@ -22,7 +22,7 @@ jobs:
       run: npm install -g prettier@latest
 
     - name: Format with Prettier
-      run: prettier --write ./* # Replace with your actual Prettier command
+      run: prettier --write ./* --config ./.prettierrc.json --ignore-path ./.prettierignore # Replace with your actual Prettier command
 
     - name: Commit changes
       run: |
