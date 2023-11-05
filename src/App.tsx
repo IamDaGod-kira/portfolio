@@ -3,6 +3,7 @@ import Header from './components/header';
 import Body from './components/body';
 import GitHubRepoList from './components/ghRepos';
 import Stars from './components/stars';
+import Certs from './components/certificates';
 import './App.css';
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
     <div className="bg-gradient-to-br from-blue-700 to-purple-500">
       <Header /> <br /> <Body /> <br />
       <GitHubRepoList /> <Stars />
+      <br />
+      <Certs />
     </div>
   );
 }
