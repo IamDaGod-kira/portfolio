@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PopupOnHover(props) {
+export default function PopupOnHover(props) {
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
@@ -18,5 +18,3 @@ function PopupOnHover(props) {
     </div>
   );
 }
-
-export default PopupOnHover;

@@ -1,0 +1,18 @@
+import React from 'react';
+
+const Advertisement = () => {
+  return (
+    <div className="bg-blue-900 text-white py-12">
+      <div className="container mx-auto text-center">
+        <p className="text-lg">
+          Ready to create your stunning portfolio? Contact me today!
+        </p>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full mt-4">
+          Contact Me
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Advertisement;

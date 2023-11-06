@@ -46,4 +46,4 @@ const GitHubRepoList = () => {
   );
 };
 
-export default GitHubRepoList;
+export default GitHubRepoList
