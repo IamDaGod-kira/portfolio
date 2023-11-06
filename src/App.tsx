@@ -4,7 +4,7 @@ import Body from './components/body';
 import GitHubRepoList from './components/ghRepos';
 import Stars from './components/stars';
 import Certs from './components/certificates';
-import Advertisement from "./components/advertisement";
+import Advertisement from './components/advertisement';
 import './App.css';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <br />
       <Body />
       <br />
-      <GitHubRepoList /> 
+      <GitHubRepoList />
       <Stars />
       <br />
       <Certs />
