@@ -9,12 +9,12 @@ export default function Header() {
         <div className="w-1/6">
           <img
             src={logo}
-            className="rounded-full h-full desktop:p-2 desktop:h-3/4"
+            className="rounded-full h-3/4 p-2 desktop:p-2 desktop:h-3/4"
             alt="logo"
           />
         </div>
         <div className="w-3/6">
-          <h2 className="p-4 text-xl desktop:p-12 text-[#4078c0] desktop:text-3xl">
+          <h2 className="p-4 text-xl desktop:p-12 text-[#4078c0] desktop:text-6xl">
             Pritam santra
           </h2>
         </div>
