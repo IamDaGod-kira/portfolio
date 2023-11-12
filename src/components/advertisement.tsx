@@ -8,7 +8,7 @@ const Advertisement = () => {
           Ready to create your stunning portfolio? Contact me today!
         </p>
         <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full mt-4">
-         <a href="mailto:IamDaGod_MoonDeity@protonmail.com"> Contact Me</a>
+          <a href="mailto:IamDaGod_MoonDeity@protonmail.com"> Contact Me</a>
         </button>
       </div>
     </div>
