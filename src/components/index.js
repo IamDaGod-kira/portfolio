@@ -1,1 +1,1 @@
-export {default as Advertisement} from "./advertisemeadvertisement"
+export { default as Advertisement } from './advertisemeadvertisement';
