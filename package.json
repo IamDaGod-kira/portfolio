@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.2.13",
     "axios": "^1.5.1",
     "everyday-fun": "^1.1.0",
+    "jest": "^27.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -22,7 +23,7 @@
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "format": "prettier --write ./* --config ./.prettierrc.json --ignore-path ./.prettierignore"
   },
