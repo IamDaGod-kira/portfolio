@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../assets/profilePic.jpg';
 import PopupOnHover from './hover';
 
 export default function Header() {
@@ -8,7 +7,7 @@ export default function Header() {
       <div className="flex bg-[#333]">
         <div className="w-1/6">
           <img
-            src={logo}
+            src="../assets/profilePic.jpg"
             className="rounded-full h-3/4 p-2 desktop:p-2 desktop:h-3/4"
             alt="logo"
           />
@@ -28,7 +27,7 @@ export default function Header() {
         <PopupOnHover content="contact me">
           <div className="w-1/6 p-4 text-xl text-[#4078c0] desktop:p-12 desktop:text-3xl">
             <a href="https://discord.com/invite/b7cbxXKqdJ">
-              <i class="fab fa-discord"></i>
+              <i className="fab fa-discord"></i>
             </a>
           </div>
         </PopupOnHover>
