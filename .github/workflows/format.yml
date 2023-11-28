@@ -22,12 +22,5 @@ jobs:
       run: npm install -g prettier@latest
 
     - name: Format with Prettier
-      run: prettier --write ./* --config ./.prettierrc.json --ignore-path ./.prettierignore || exit 0 # Replace with your actual Prettier command
-
-    - name: Commit changes
       run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
-        git add .
-        git commit -m "Format code with Prettier"
-        git push
+        git diff --quiet || { prettier --write ./* --config ./.prettierrc.json --ignore-path ./.prettierignore && git add . && git commit -m "Format code with Prettier" && git push; }
