@@ -1,5 +1,6 @@
 import React from 'react';
 import PopupOnHover from './hover';
+import pfp from "../assets/profilePic.jpg";
 
 export default function Header() {
   return (
@@ -7,7 +8,7 @@ export default function Header() {
       <div className="flex bg-[#333]">
         <div className="w-1/6">
           <img
-            src="../assets/profilePic.jpg"
+            src={pfp}
             className="rounded-full h-3/4 p-2 desktop:p-2 desktop:h-3/4"
             alt="logo"
           />
