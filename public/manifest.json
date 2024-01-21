@@ -1,15 +1,16 @@
 {
-  "short_name": "Pritam's portfolio",
-  "name": "made with ReactJS",
-  "icons": [
+  "name": "Pritam Santra [IamDaGod-kira]",
+  "short_name": "Pritam's Portfolio",
+  "theme_color": "#5321f3",
+  "background_color": "#5321f3",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/portfolio/",
+    "icons": [
     {
       "src": "profilePic.jpg",
-      "type": "image/png",
-      "sizes": "512x512"
+      "type": "image/jpeg"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
