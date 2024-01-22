@@ -5,7 +5,7 @@ import GitHubRepoList from './components/ghRepos';
 import Stars from './components/stars';
 import Certs from './components/certificates';
 import Advertisement from './components/advertisement';
-import Snippets from './components/snippets';
+import Resume from './components/snippets';
 import './App.css';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <br />
       <GitHubRepoList />
       <br />
-      <Snippets/>
+      <Resume />
       <Stars />
       <br />
       <Certs />
