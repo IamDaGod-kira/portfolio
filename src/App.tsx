@@ -5,7 +5,7 @@ import GitHubRepoList from './components/ghRepos';
 import Stars from './components/stars';
 import Certs from './components/certificates';
 import Advertisement from './components/advertisement';
-import Resume from './components/snippets';
+import Resume from './components/resume';
 import './App.css';
 
 function App() {
