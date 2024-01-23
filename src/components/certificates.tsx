@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import image1 from '../assets/C++_Certificate.jpg';
 import image2 from '../assets/hour_of_code.png';
 import image3 from '../assets/jQuery_certificate.jpg';
 import image4 from '../assets/minecraft_hour_of_code_2.png';
 
 export default function Certs() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = React.useState(null);
 
   const images = [image1, image2, image3, image4];
 
