@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.06c54482.css",
-    "main.js": "/portfolio/static/js/main.f6dc7b0a.js",
+    "main.css": "/portfolio/static/css/main.e7b2988d.css",
+    "main.js": "/portfolio/static/js/main.53611522.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/hour_of_code.png": "/portfolio/static/media/hour_of_code.78abc0a81fd72b5cad10.png",
     "static/media/minecraft_hour_of_code_2.png": "/portfolio/static/media/minecraft_hour_of_code_2.86cc5d6161a970a36a4f.png",
@@ -9,12 +9,12 @@
     "static/media/profilePic.jpg": "/portfolio/static/media/profilePic.3d0c69c2e86a05c7f799.jpg",
     "static/media/C++_Certificate.jpg": "/portfolio/static/media/C++_Certificate.a0153d0a79768e360842.jpg",
     "index.html": "/portfolio/index.html",
-    "main.06c54482.css.map": "/portfolio/static/css/main.06c54482.css.map",
-    "main.f6dc7b0a.js.map": "/portfolio/static/js/main.f6dc7b0a.js.map",
+    "main.e7b2988d.css.map": "/portfolio/static/css/main.e7b2988d.css.map",
+    "main.53611522.js.map": "/portfolio/static/js/main.53611522.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06c54482.css",
-    "static/js/main.f6dc7b0a.js"
+    "static/css/main.e7b2988d.css",
+    "static/js/main.53611522.js"
   ]
 }
