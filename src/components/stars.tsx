@@ -18,13 +18,18 @@ export default function Stars() {
     };
 
     fetchStars();
-  });
+  }, []);
 
   const handleClick = () => {
-    setClicked(!clicked);
-    setStars(stars + 1);
+    if (!clicked) {
+      setStars(stars + 1);
+      setClicked(true);
+    }
   };
-  const cname = clicked ? 'fas fa-star pointer-events-none' : 'far fa-star';
+
+  const starIconClass = clicked
+    ? 'fas fa-star pointer-events-none'
+    : 'far fa-star cursor-pointer';
 
   return (
     <>
@@ -34,7 +39,7 @@ export default function Stars() {
         rel="noreferrer"
       >
         <div className="fixed text-center bottom-0 right-0 p-4 m-4 bg-gray-900 text-white rounded-full">
-          <i onClick={handleClick} className={cname}></i> <br />
+          <i onClick={handleClick} className={starIconClass}></i> <br />
           {stars}
         </div>
       </a>

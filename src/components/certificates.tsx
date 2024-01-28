@@ -9,7 +9,7 @@ export default function Certs() {
 
   const images = [image1, image2, image3, image4];
 
-  const openImage = image => {
+  const openImage = (image) => {
     setSelectedImage(image);
   };
 
@@ -19,14 +19,14 @@ export default function Certs() {
 
   return (
     <>
-      <h2 className="text-2xl font-bold mb-4">My Certificates</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+      <h2 className="text-xl md:text-2xl font-bold mb-4">My Certificates</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
         {images.map((image, index) => (
           <div key={index} className="relative">
             <img
               src={image}
               alt={`Certificate ${index + 1}`}
-              className="cursor-pointer"
+              className="cursor-pointer w-full"
               onClick={() => openImage(image)}
             />
           </div>
@@ -41,9 +41,9 @@ export default function Certs() {
               />
               <button
                 onClick={closeImage}
-                className="absolute top-4 right-4 text-black text-xl cursor-pointer"
+                className="absolute top-4 right-4 text-white text-xl cursor-pointer"
               >
-                <i class="far fa-window-close"></i>
+                <i className="far fa-window-close"></i>
               </button>
             </div>
           </div>

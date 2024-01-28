@@ -21,13 +21,13 @@ const GitHubRepoList = () => {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">My GitHub Repositories</h2>
-      <div className="desktop:grid desktop:grid-cols-2 desktop:gap-4">
+      <h2 className="text-xl md:text-2xl font-bold mb-4">My GitHub Repositories</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <ul className="space-y-2">
-          {repos.map(repo => (
+          {repos.map((repo) => (
             <li
               key={repo.id}
-              className="bg-white p-4 shadow-md rounded-md desktop:flex desktop:flex-col desktop:space-y-2"
+              className="bg-white p-4 shadow-md rounded-md md:flex md:flex-col md:space-y-2"
             >
               <a
                 href={repo.html_url}
