@@ -10,17 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out code
-      uses: actions/checkout@v4
+      - name: Check out code
+        uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-    - name: Install dependencies
-      run: npm install -g prettier@latest
+      - name: Install dependencies
+        run: npm install -g prettier@latest
 
-    - name: Format with Prettier
-      run: |
-        git diff --quiet || { prettier --write ./* --config ./.prettierrc.json --ignore-path ./.prettierignore && git add . && git commit -m "Format code with Prettier" && git push; }
+      - name: Format with Prettier
+        run: |
+          git diff --quiet || { prettier --write ./* --config ./.prettierrc.json --ignore-path ./.prettierignore && git add . && git commit -m "Format code with Prettier" && git push; }

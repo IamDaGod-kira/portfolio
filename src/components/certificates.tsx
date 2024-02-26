@@ -9,7 +9,7 @@ export default function Certs() {
 
   const images = [image1, image2, image3, image4];
 
-  const openImage = (image) => {
+  const openImage = image => {
     setSelectedImage(image);
   };
 

@@ -10,7 +10,7 @@ export default function Body() {
       title: 'Joke',
       text: joke.body,
       icon: 'info',
-      footer: `Category: ${joke.category}`
+      footer: `Category: ${joke.category}`,
     });
   };
 
