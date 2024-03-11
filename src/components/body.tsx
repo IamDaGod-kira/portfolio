@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 const all = require('everyday-fun');
 
 export default function Body() {
-  const quote = all.getRandomQuote();
+  const [quote, setQuote] = React.useState(all.getRandomQuote());
   const jokeFunc = () => {
     const joke = all.getRandomJoke();
     Swal.fire({
@@ -13,6 +13,10 @@ export default function Body() {
       footer: `Category: ${joke.category}`,
     });
   };
+
+  const handleClick = () => {
+    setQuote(all.getRandomQuote());
+  }
 
   return (
     <React.Fragment>
@@ -41,6 +45,7 @@ export default function Body() {
           <p className="text-base md:text-lg text-blue-600">{quote.quote}</p>
           <i className="text-4xl text-gray-600 mt-4 leading-none">"</i>
           <p className="text-sm md:text-base">by {quote.author}</p>
+          <button onClick={handleClick}>Renew Quote</button>
         </blockquote>
         <br />
         <button
