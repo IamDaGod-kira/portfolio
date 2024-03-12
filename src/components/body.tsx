@@ -45,7 +45,7 @@ export default function Body() {
           <p className="text-base md:text-lg text-blue-600">{quote.quote}</p>
           <i className="text-4xl text-gray-600 mt-4 leading-none">"</i>
           <p className="text-sm md:text-base">by {quote.author}</p>
-          <button className='text-right text-sm italic underline overline' onClick={handleClick}>🔁</button>
+          <button className='text-sm italic underline overline' onClick={handleClick}>Reload Quote</button>
         </blockquote>
         <br />
         <button
