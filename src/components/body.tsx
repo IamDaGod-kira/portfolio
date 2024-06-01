@@ -16,7 +16,7 @@ export default function Body() {
 
   const handleClick = () => {
     setQuote(all.getRandomQuote());
-  }
+  };
 
   return (
     <React.Fragment>
@@ -38,6 +38,23 @@ export default function Body() {
           you can hire me for the following, but I only take crypto
         </p>
         <br />
+        <p className="text-sm md:text-base">
+          I also have some hobbies, like I can do a little bit of writing poetic
+          things, photography, etc. I love reading books ~ of All types
+        </p>
+        <br />
+        <p className="text-sm md:text-base">
+          You can find my photography pieces on my{' '}
+          <i>
+            <a
+              className="text-[#4078c0] border-dotted border-b-4 border-black"
+              href="https://www.instagram.com/cameraman.pritam/"
+            >
+              Instagram
+            </a>
+          </i>
+        </p>
+        <br />
         <hr className="my-6" />
         <br />
         <blockquote className="p-6 rounded-lg shadow-md bg-white">
@@ -45,7 +62,12 @@ export default function Body() {
           <p className="text-base md:text-lg text-blue-600">{quote.quote}</p>
           <i className="text-4xl text-gray-600 mt-4 leading-none">"</i>
           <p className="text-sm md:text-base">by {quote.author}</p>
-          <button className='text-sm italic underline overline' onClick={handleClick}>Reload Quote</button>
+          <button
+            className="text-sm italic underline overline"
+            onClick={handleClick}
+          >
+            Reload Quote
+          </button>
         </blockquote>
         <br />
         <button
