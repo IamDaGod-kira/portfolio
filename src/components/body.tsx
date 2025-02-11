@@ -4,15 +4,6 @@ const all = require('everyday-fun');
 
 export default function Body() {
   const [quote, setQuote] = React.useState(all.getRandomQuote());
-  const jokeFunc = () => {
-    const joke = all.getRandomJoke();
-    Swal.fire({
-      title: 'Joke',
-      text: joke.body,
-      icon: 'info',
-      footer: `Category: ${joke.category}`,
-    });
-  };
 
   const handleClick = () => {
     setQuote(all.getRandomQuote());
@@ -40,7 +31,8 @@ export default function Body() {
         <br />
         <p className="text-sm md:text-base">
           I also have some hobbies, like I can do a little bit of writing poetic
-          things, photography, etc. I love reading books ~ of All types
+          things, photography, etc. I love reading books ~ of All types, and I
+          love music and my guitar!
         </p>
         <br />
         <p className="text-sm md:text-base">
@@ -50,7 +42,7 @@ export default function Body() {
               className="text-[#4078c0] border-dotted border-b-4 border-black"
               href="https://www.instagram.com/cameraman.pritam/"
             >
-              Instagram
+              <i className="fab fa-pinterest font-bold h-5"></i> Pinterest
             </a>
           </i>
         </p>
@@ -70,12 +62,6 @@ export default function Body() {
           </button>
         </blockquote>
         <br />
-        <button
-          onClick={jokeFunc}
-          className="text-green-400 text-xs md:text-sm underline"
-        >
-          <p>Bored of quotes?? Click here for a joke...</p>
-        </button>
         <h3 className="text-xl text-white mt-6">Why do I do what I do?</h3>
         <p className="text-sm md:text-base">
           I am passionate about creating innovative solutions and pushing the
