@@ -12,7 +12,14 @@ const GitHubRepoList = () => {
         );
         setRepos(response.data);
       } catch (error) {
-        console.error('Error fetching GitHub repos:', error);
+        // @ts-ignore
+        import('sweetalert2').then(Swal =>
+          Swal.default.fire({
+            icon: 'error',
+            title: 'Error',
+            text: `Failed to fetch GitHub repositories:\n${error}`,
+          })
+        );
       }
     };
 

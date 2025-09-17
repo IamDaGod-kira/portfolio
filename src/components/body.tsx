@@ -15,7 +15,9 @@ export default function Body() {
           I am a small developer from India.
         </h4>
         <p className="text-sm md:text-base">
-          I know a bit of ReactJS, NodeJS, C++ etc.
+          I know a bit of ReactJS, NodeJS. 
+          I have mastered C++.
+          Currently learning Python.
         </p>
         <p className="text-sm md:text-base">
           I have done some projects, and I am a noob still ...
@@ -41,7 +43,7 @@ export default function Body() {
               className="text-[#4078c0] border-dotted border-b-4 border-black"
               href="https://www.instagram.com/cameraman.pritam/"
             >
-              <i className="fab fa-pinterest font-bold h-5"></i> Pinterest
+              <i className="fab fa-instagram font-bold h-5"></i> Instagram
             </a>
           </i>
         </p>
