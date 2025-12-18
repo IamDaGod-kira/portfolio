@@ -11,7 +11,7 @@ export default function PopupOnHover(props) {
     >
       {props.children}
       {isHovered && (
-        <div className="absolute top-0 left-full p-2 bg-gray-200 shadow-lg rounded-lg">
+        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 p-2 bg-ink_black border border-dark_teal text-pearl_aqua text-sm rounded-lg shadow-xl whitespace-nowrap z-50">
           {props.content}
         </div>
       )}
