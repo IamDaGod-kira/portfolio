@@ -10,79 +10,90 @@ export default function About() {
 
   return (
     <div className="px-6 md:px-12 lg:px-24">
-      <div className="bg-gradient-to-r from-rusty_spice to-ink_black text-white py-12 md:py-16 border-t border-burnt_caramel/30 backdrop-blur-sm">
-        <h4 className="text-2xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-pearl_aqua to-dark_cyan">
-          I am a small developer from India.
-        </h4>
+      <div className="glass-panel p-8 md:p-12 rounded-3xl border-white/10 shadow-2xl relative overflow-hidden bg-black/40">
 
-        <div className="space-y-4 text-gray-200 text-lg leading-relaxed">
-          <p>
-            I know a bit of <span className="text-burnt_caramel font-bold">ReactJS</span>, <span className="text-burnt_caramel font-bold">NodeJS</span>.
-            I have mastered <span className="text-burnt_caramel font-bold">C++</span> and am currently learning <span className="text-burnt_caramel font-bold">Python</span>.
-          </p>
-          <p>
-            I have done some projects, and I am still learning and growing every day.
-          </p>
-          <p>
-            I also design Discord Servers, manage them as staff, and develop bots.
-          </p>
-          <p>
-            You can hire me for the following (crypto only):
-          </p>
+        <div className="relative z-10">
+          <h4 className="text-3xl md:text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-mac-blue-500 to-mac-teal-500 font-sans tracking-tight">
+            I am a small developer from India.
+          </h4>
 
-          <p className="mt-4">
-            I enjoy writing poetry, photography, and music (guitar).
-            <br />
-            Check out my photography on{' '}
-            <a
-              className="text-pearl_aqua hover:text-dark_cyan underline decoration-dotted underline-offset-4 transition-colors"
-              href="https://www.instagram.com/cameraman.pritam/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fab fa-instagram font-bold"></i> Instagram
-            </a>
-          </p>
-        </div>
+          <div className="space-y-6 text-mac-gray-900 text-xl leading-relaxed font-light">
+            <p>
+              I know a bit of <span className="text-mac-orange-500 font-bold">ReactJS</span>, <span className="text-mac-green-500 font-bold">NodeJS</span>.
+              I have mastered <span className="text-mac-blue-500 font-bold">C++</span> and am currently learning <span className="text-mac-yellow-500 font-bold">Python</span>.
+            </p>
+            <p>
+              I have done some projects, and I am still learning and growing every day.
+            </p>
+            <p>
+              I also design Discord Servers, manage them as staff, and develop bots.
+            </p>
+            <p>
+              You can hire me for the following (crypto only):
+            </p>
 
-        <div className="my-8 border-t border-dark_teal/30"></div>
-
-        <blockquote className="relative p-8 rounded-xl bg-ink_black/40 border-l-4 border-golden_orange shadow-lg">
-          <i className="fas fa-quote-left text-3xl text-dark_teal absolute top-4 left-4 opacity-50"></i>
-          <p className="text-xl md:text-2xl text-vanilla_custard font-serif italic mb-4 relative z-10 px-6">
-            "{quote.quote}"
-          </p>
-          <footer className="text-right">
-            <cite className="text-rusty_spice not-italic block font-bold">- {quote.author}</cite>
-            <button
-              className="mt-2 text-sm text-dark_cyan hover:text-pearl_aqua transition-colors hover:underline"
-              onClick={handleClick}
-            >
-              <i className="fas fa-sync-alt mr-1"></i> Reload Quote
-            </button>
-          </footer>
-        </blockquote>
-
-        <div className="mt-12 grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-2xl font-bold text-pearl_aqua mb-4">Why do I do what I do?</h3>
-            <p className="text-gray-300 leading-relaxed">
-              I am passionate about creating innovative solutions and pushing the
-              boundaries of technology. My journey as a developer began with a
-              fascination for Node.js, React.js, and C++, and has since evolved into
-              a commitment to delivering secure and efficient software. Hacking and
-              Discord have opened up new avenues for me to explore the digital
-              world.
+            <p className="mt-4 pt-4 border-t border-white/10">
+              I enjoy writing poetry, photography, and music (guitar).
+              <br />
+              <span className="inline-flex items-center gap-2 mt-2">
+                Check out my photography on{' '}
+                <a
+                  className="text-mac-pink-500 hover:text-mac-pink-900 font-bold hover:underline transition-colors decoration-2 underline-offset-4"
+                  href="https://www.instagram.com/cameraman.pritam/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="fab fa-instagram text-xl"></i> Instagram
+                </a>
+              </span>
             </p>
           </div>
-          <div>
-            <h3 className="text-2xl font-bold text-pearl_aqua mb-4">What can I do for you?</h3>
-            <p className="text-gray-300 leading-relaxed">
-              I offer a range of services tailored to your software development
-              needs. Whether you need a Node.js or React.js web application, a
-              high-performance C++ program, or assistance with securing your digital
-              assets, I have the expertise to deliver.
+
+          <div className="my-10 border-t border-white/10"></div>
+
+          <blockquote className="relative p-8 rounded-2xl glass bg-black/30 border border-white/10 shadow-sm">
+            <i className="fas fa-quote-left text-4xl text-mac-blue-500 absolute top-6 left-6 opacity-30"></i>
+            <p className="text-2xl md:text-3xl text-white font-serif italic mb-6 relative z-10 px-6 leading-relaxed">
+              "{quote.quote}"
             </p>
+            <footer className="flex flex-col md:flex-row justify-between items-end md:items-center gap-4 border-t border-white/10 pt-4">
+              <cite className="text-mac-gray-500 not-italic block font-bold text-lg">- {quote.author}</cite>
+              <button
+                className="text-sm font-bold text-mac-blue-500 hover:text-mac-blue-900 transition-colors uppercase tracking-wide flex items-center bg-white/5 px-4 py-2 rounded-full hover:bg-white/10"
+                onClick={handleClick}
+              >
+                <i className="fas fa-sync-alt mr-2"></i> Reload Quote
+              </button>
+            </footer>
+          </blockquote>
+
+          <div className="mt-16 grid md:grid-cols-2 gap-8">
+            <div className="glass-card p-8 bg-black/30 hover:bg-black/50 transition-colors border-white/5">
+              <h3 className="text-2xl font-bold text-mac-indigo-500 mb-4 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-lg bg-mac-indigo-500/20 flex items-center justify-center text-mac-indigo-500"><i className="fas fa-question"></i></span>
+                Why do I do what I do?
+              </h3>
+              <p className="text-mac-gray-300 leading-relaxed text-lg">
+                I am passionate about creating innovative solutions and pushing the
+                boundaries of technology. My journey as a developer began with a
+                fascination for Node.js, React.js, and C++, and has since evolved into
+                a commitment to delivering secure and efficient software. Hacking and
+                Discord have opened up new avenues for me to explore the digital
+                world.
+              </p>
+            </div>
+            <div className="glass-card p-8 bg-black/30 hover:bg-black/50 transition-colors border-white/5">
+              <h3 className="text-2xl font-bold text-mac-teal-500 mb-4 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-lg bg-mac-teal-500/20 flex items-center justify-center text-mac-teal-500"><i className="fas fa-tools"></i></span>
+                What can I do for you?
+              </h3>
+              <p className="text-mac-gray-300 leading-relaxed text-lg">
+                I offer a range of services tailored to your software development
+                needs. Whether you need a Node.js or React.js web application, a
+                high-performance C++ program, or assistance with securing your digital
+                assets, I have the expertise to deliver.
+              </p>
+            </div>
           </div>
         </div>
       </div>

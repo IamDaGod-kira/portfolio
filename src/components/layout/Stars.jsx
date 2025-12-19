@@ -34,12 +34,12 @@ export default function Stars() {
       rel="noreferrer"
       className="fixed bottom-6 right-6 z-50 group"
     >
-      <div className="flex flex-col items-center justify-center w-16 h-16 bg-gradient-to-br from-brown_red to-oxidized_iron text-pearl_aqua rounded-full shadow-lg border-2 border-rusty_spice group-hover:scale-110 transition-transform duration-300 group-hover:shadow-rusty_spice/20">
+      <div className="flex flex-col items-center justify-center w-16 h-16 glass-card bg-black/50 hover:bg-black/70 backdrop-blur-md rounded-full border border-white/20 text-mac-gray-300 shadow-xl transition-colors">
         <i
           onClick={(e) => { e.preventDefault(); handleClick(); }}
-          className={`text-xl mb-1 ${clicked ? 'fas fa-star text-vanilla_custard' : 'far fa-star group-hover:text-vanilla_custard transition-colors'}`}
+          className={`text-xl mb-1 ${clicked ? 'fas fa-star text-mac-yellow-500' : 'far fa-star text-mac-gray-500 group-hover:text-mac-yellow-500 transition-colors'}`}
         ></i>
-        <span className="text-xs font-bold">{stars}</span>
+        <span className="text-xs font-bold font-sans">{stars}</span>
       </div>
     </a>
   );

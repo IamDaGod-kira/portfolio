@@ -1,22 +1,18 @@
 export default function Resume() {
   return (
-    <div className="px-6 md:px-12 lg:px-24 text-center">
-      <div className="bg-ink_black/30 p-8 rounded-2xl border border-burnt_caramel/30 backdrop-blur-sm inline-block">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-rusty_spice to-vanilla_custard">
+    <div className="px-6 md:px-12 lg:px-24 text-center py-12">
+      <div className="glass-panel p-10 rounded-3xl border-white/10 shadow-xl inline-block hover:shadow-2xl transition-shadow bg-black/40">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-mac-green-500 to-mac-teal-500 font-sans tracking-tight">
           My Resume
         </h2>
-        <p className="text-lg text-gray-300">
-          You can view my full resume{' '}
-          <a
-            className="text-burnt_caramel hover:text-rusty_spice font-bold underline decoration-dotted underline-offset-4 transition-colors"
-            href="https://rxresu.me/iamdagod-kira/my-resume"
-            target="_blank"
-            rel="noreferrer"
-          >
-            here
-          </a>
-          .
-        </p>
+        <a
+          href="https://drive.google.com/file/d/1C42D_B0988Lzox4v6MIk6Qpk_wVfC2ne/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+          className="text-lg md:text-xl font-bold text-mac-blue-500 hover:text-mac-blue-400 underline decoration-2 underline-offset-4 transition-colors"
+        >
+          View/Download Resume
+        </a>
       </div>
     </div>
   );

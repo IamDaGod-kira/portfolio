@@ -11,25 +11,25 @@ export default function Certificates() {
 
   return (
     <div className="px-6 md:px-12 lg:px-24">
-      <h2 className="text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-burnt_caramel to-oxidized_iron text-center md:text-left">
+      <h2 className="text-3xl md:text-5xl font-bold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-mac-purple-500 to-mac-indigo-500 font-sans tracking-tight text-center md:text-left">
         My Certificates
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {images.map((image, index) => (
           <div
             key={index}
-            className="relative group cursor-pointer overflow-hidden rounded-xl border-2 border-burnt_caramel/30 hover:border-burnt_caramel transition-all duration-300 bg-ink_black/30"
+            className="group cursor-pointer overflow-hidden rounded-2xl glass-card border-white/10 shadow-lg hover:shadow-xl transition-shadow bg-black/40"
             onClick={() => setSelectedImage(image)}
           >
-            <div className="aspect-w-4 aspect-h-3">
+            <div className="aspect-w-4 aspect-h-3 relative overflow-hidden">
               <img
                 src={image}
                 alt={`Certificate ${index + 1}`}
-                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                className="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"
               />
-            </div>
-            <div className="absolute inset-0 bg-ink_black/0 group-hover:bg-ink_black/40 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-              <i className="fas fa-search-plus text-3xl text-white drop-shadow-lg"></i>
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100 backdrop-blur-sm">
+                <i className="fas fa-search-plus text-3xl text-white drop-shadow-md"></i>
+              </div>
             </div>
           </div>
         ))}
@@ -37,18 +37,18 @@ export default function Certificates() {
 
       {selectedImage && (
         <div
-          className="fixed inset-0 z-[60] flex justify-center items-center bg-ink_black/90 backdrop-blur-sm p-4"
+          className="fixed inset-0 z-[60] flex justify-center items-center bg-black/80 backdrop-blur-xl p-4 transition-opacity duration-300"
           onClick={() => setSelectedImage(null)}
         >
-          <div className="relative max-w-5xl w-full max-h-screen">
+          <div className="relative max-w-5xl w-full max-h-screen p-2 glass-panel rounded-3xl border-white/10 bg-black/60">
             <img
               src={selectedImage}
               alt="Enlarged Certificate"
-              className="max-h-[90vh] w-auto mx-auto border-4 border-rusty_spice rounded-lg shadow-2xl"
+              className="max-h-[85vh] w-auto mx-auto rounded-xl shadow-2xl"
             />
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-rusty_spice transition-colors text-3xl"
+              className="absolute -top-4 -right-4 w-10 h-10 bg-mac-red-500 text-white rounded-full shadow-lg hover:bg-mac-red-900 transition-colors flex items-center justify-center"
             >
               <i className="fas fa-times"></i>
             </button>

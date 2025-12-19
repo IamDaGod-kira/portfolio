@@ -2,14 +2,20 @@ import React from 'react';
 
 const ContactBanner = () => {
   return (
-    <div className="bg-gradient-to-r from-rusty_spice/20 to-ink_black text-white py-12 md:py-16 border-t border-burnt_caramel/30">
-      <div className="container mx-auto text-center px-4">
-        <p className="text-xl md:text-2xl lg:text-3xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-pearl_aqua to-vanilla_custard">
-          Ready to create your stunning portfolio?
+    <div className="glass-panel mx-4 md:mx-12 lg:mx-24 my-12 rounded-3xl p-8 md:p-12 text-center shadow-2xl border-white/10 relative overflow-hidden group bg-black/40">
+      <div className="absolute inset-0 bg-gradient-to-r from-mac-pink-500/10 to-mac-purple-500/10 backdrop-blur-3xl -z-10"></div>
+
+      <div className="relative z-10">
+        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-mac-pink-500 to-mac-purple-500 font-sans tracking-tight">
+          Let's work together!
+        </h2>
+        <p className="text-mac-gray-300 text-lg md:text-xl mb-10 font-light max-w-2xl mx-auto">
+          I'm always open to discussing new projects, creative ideas or
+          opportunities to be part of your visions.
         </p>
         <a
-          href="mailto:IamDaGod_MoonDeity@protonmail.com"
-          className="inline-block bg-gradient-to-r from-rusty_spice to-oxidized_iron hover:from-oxidized_iron hover:to-rusty_spice text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-oxidized_iron/20"
+          href="https://discord.com/invite/b7cbxXKqdJ"
+          className="inline-block bg-gradient-to-r from-mac-blue-500 to-mac-indigo-500 text-white font-bold py-4 px-10 rounded-full shadow-lg hover:shadow-xl hover:opacity-90 transition-all text-lg"
         >
           Contact Me
         </a>
