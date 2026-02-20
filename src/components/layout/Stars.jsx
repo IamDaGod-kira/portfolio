@@ -34,10 +34,10 @@ export default function Stars() {
       rel="noreferrer"
       className="fixed bottom-6 right-6 z-50 group"
     >
-      <div className="flex flex-col items-center justify-center w-16 h-16 glass-card bg-black/50 hover:bg-black/70 backdrop-blur-md rounded-full border border-white/20 text-mac-gray-300 shadow-xl transition-colors">
+      <div className="flex flex-col items-center justify-center w-16 h-16 glass-card hover:bg-surface1/70 backdrop-blur-md rounded-full border border-overlay0 text-subtext0 shadow-xl transition-colors">
         <i
           onClick={(e) => { e.preventDefault(); handleClick(); }}
-          className={`text-xl mb-1 ${clicked ? 'fas fa-star text-mac-yellow-500' : 'far fa-star text-mac-gray-500 group-hover:text-mac-yellow-500 transition-colors'}`}
+          className={`text-xl mb-1 ${clicked ? 'fas fa-star text-yellow' : 'far fa-star text-subtext1 group-hover:text-yellow transition-colors'}`}
         ></i>
         <span className="text-xs font-bold font-sans">{stars}</span>
       </div>

@@ -5,77 +5,45 @@
 
   --breakpoint-desktop: 720px;
 
-  /* macOS Big Sur Dark Mode Palette */
-
-  /* System Blue - Dark */
-  --color-mac-blue-500: #0a84ff;
-  --color-mac-blue: #0a84ff;
-  --color-mac-blue-900: #004080;
-
-  /* System Purple - Dark */
-  --color-mac-purple-500: #5e5ce6;
-  --color-mac-purple: #5e5ce6;
-  --color-mac-purple-900: #2b2a6b;
-
-  /* System Pink - Dark */
-  --color-mac-pink-500: #ff375f;
-  --color-mac-pink: #ff375f;
-  --color-mac-pink-900: #80162a;
-
-  /* System Red - Dark */
-  --color-mac-red-500: #ff453a;
-  --color-mac-red: #ff453a;
-  --color-mac-red-900: #801d18;
-
-  /* System Orange - Dark */
-  --color-mac-orange-500: #ff9f0a;
-  --color-mac-orange: #ff9f0a;
-  --color-mac-orange-900: #804a00;
-
-  /* System Yellow - Dark */
-  --color-mac-yellow-500: #ffd60a;
-  --color-mac-yellow: #ffd60a;
-  --color-mac-yellow-900: #806600;
-
-  /* System Green - Dark */
-  --color-mac-green-500: #32d74b;
-  --color-mac-green: #32d74b;
-  --color-mac-green-900: #1a632c;
-
-  /* System Teal/Cyan - Dark */
-  --color-mac-teal-500: #64d2ff;
-  --color-mac-teal: #64d2ff;
-  --color-mac-teal-900: #2d647d;
-
-  /* System Indigo - Dark */
-  --color-mac-indigo-500: #5e5ce6;
-  --color-mac-indigo: #5e5ce6;
-  --color-mac-indigo-900: #2f2e73;
-
-  /* System Gray - Dark */
-  --color-mac-gray-100: #1c1c1e;
-  --color-mac-gray-200: #2c2c2e;
-  --color-mac-gray-300: #3a3a3c;
-  --color-mac-gray-400: #48484a;
-  --color-mac-gray-500: #636366;
-  --color-mac-gray-600: #8e8e93;
-  --color-mac-gray-700: #aeaeb2;
-  --color-mac-gray-800: #c7c7cc;
-  --color-mac-gray-900: #e5e5ea;
+  /* Catppuccin Macchiato Palette */
+  --color-rosewater: #f5e0dc;
+  --color-flamingo: #f2cdcd;
+  --color-pink: #f5c2e7;
+  --color-mauve: #cba6f7;
+  --color-red: #f38ba8;
+  --color-maroon: #eba0ac;
+  --color-peach: #fab387;
+  --color-yellow: #f9e2af;
+  --color-green: #a6e3a1;
+  --color-teal: #94e2d5;
+  --color-sky: #89dceb;
+  --color-sapphire: #74c7ec;
+  --color-blue: #89b4fa;
+  --color-lavender: #b4befe;
+  --color-text: #cdd6f4;
+  --color-subtext1: #bac2de;
+  --color-subtext0: #a6adc8;
+  --color-overlay2: #9399b2;
+  --color-overlay1: #7f849c;
+  --color-overlay0: #6c7086;
+  --color-surface2: #585b70;
+  --color-surface1: #45475a;
+  --color-surface0: #313244;
+  --color-base: #1e1e2e;
 }
 
 /* Custom Utilities for Dark Glassmorphism */
 @layer utilities {
   .glass {
-    @apply backdrop-blur-xl bg-black/40 border border-white/10 shadow-lg;
+    @apply backdrop-blur-xl bg-surface1/40 border border-overlay0/20 shadow-lg;
   }
 
   .glass-card {
-    @apply backdrop-blur-2xl bg-black/50 border border-white/10 shadow-xl rounded-2xl;
+    @apply backdrop-blur-2xl bg-surface0/50 border border-overlay0/20 shadow-xl rounded-2xl;
   }
 
   .glass-panel {
-    @apply backdrop-blur-3xl bg-black/60 border border-white/10 shadow-2xl;
+    @apply backdrop-blur-3xl bg-surface0/60 border border-overlay0/20 shadow-2xl;
   }
 }
 
@@ -84,10 +52,9 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Static Big Sur Dark Mode background (Blue/Purple/Black Gradient) */
-  background: linear-gradient(180deg, #0b1026 0%, #2b32b2 50%, #1488cc 100%);
+  /* Updated background to new palette */
+  background-color: var(--color-base);
   background-attachment: fixed;
-  color: #e5e5ea;
-  /* Light gray text for dark mode */
+  color: var(--color-text);
   min-height: 100vh;
 }
