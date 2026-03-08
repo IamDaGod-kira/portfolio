@@ -22,9 +22,9 @@ export default function Header() {
             <i className="fab fa-github"></i>
           </a>
         </PopupOnHover>
-        <PopupOnHover content="Contact me">
-          <a href="https://discord.com/invite/b7cbxXKqdJ" className="text-subtext1 hover:text-mauve transition-colors text-3xl">
-            <i className="fab fa-discord"></i>
+        <PopupOnHover content="Instagram">
+          <a href="https://www.instagram.com/cameraman.pritam/" className="text-subtext1 hover:text-mauve transition-colors text-3xl">
+            <i className="fab fa-instagram"></i>
           </a>
         </PopupOnHover>
       </div>

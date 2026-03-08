@@ -14,29 +14,30 @@ export default function About() {
 
         <div className="relative z-10">
           <h4 className="text-3xl md:text-5xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue to-teal font-sans tracking-tight">
-            I am a small developer from India.
+            Hello my Fellas!
           </h4>
 
           <div className="space-y-6 text-subtext1 text-xl leading-relaxed font-light">
+            <p>I am a small curious developer from India..</p>
             <p>
               I know a bit of <span className="text-peach font-bold">ReactJS</span>, <span className="text-green font-bold">NodeJS</span>.
-              I have mastered <span className="text-blue font-bold">C++</span> and am currently learning <span className="text-yellow font-bold">Python</span>.
+              I have mastered <span className="text-blue font-bold">C++</span> and am currently learning things like <span className="text-yellow font-bold">Cryptography, BCI tech etc..</span>.
             </p>
             <p>
               I have done some projects, and I am still learning and growing every day.
             </p>
             <p>
-              I also design Discord Servers, manage them as staff, and develop bots.
+              I also design Discord Servers and develop bots.
             </p>
             <p>
-              You can hire me for the following (crypto only):
+              You can hire me for any above suited job..
             </p>
 
             <p className="mt-4 pt-4 border-t border-overlay0/50">
-              I enjoy writing poetry, photography, and music (guitar).
+              I enjoy writing poetry, photography, and I am also a Guitarist!.
               <br />
               <span className="inline-flex items-center gap-2 mt-2">
-                Check out my photography on{' '}
+                Check out my photography, or simply reach out on{' '}
                 <a
                   className="text-pink hover:text-rosewater font-bold hover:underline transition-colors decoration-2 underline-offset-4"
                   href="https://www.instagram.com/cameraman.pritam/"
@@ -84,14 +85,15 @@ export default function About() {
             </div>
             <div className="glass-card p-8 hover:bg-surface0 transition-colors">
               <h3 className="text-2xl font-bold text-teal mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-teal/20 flex items-center justify-center text-teal"><i className="fas fa-tools"></i></span>
+                <span className="w-8 h-8 rounded-lg bg-teal/20 flex items-center justify-center text-teal"><i className="fas fa-question"></i></span>
                 What can I do for you?
               </h3>
               <p className="text-subtext1 leading-relaxed text-lg">
                 I offer a range of services tailored to your software development
                 needs. Whether you need a Node.js or React.js web application, a
                 high-performance C++ program, or assistance with securing your digital
-                assets, I have the expertise to deliver.
+                assets, I have the expertise to deliver. <br /> I can make websites for you, make apps, and help you in your projects! <br />
+                But please note, I only take fees in crypto.. (Sorry)
               </p>
             </div>
           </div>
