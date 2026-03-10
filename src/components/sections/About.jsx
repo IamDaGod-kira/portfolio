@@ -73,7 +73,7 @@ export default function About() {
             </footer>
           </blockquote>
 
-          <div className="mt-16 grid md:grid-cols-2 gap-8">
+          <div className="mt-16 grid md:grid-cols-1 gap-8">
             <div className="glass-card p-8 hover:bg-surface0 transition-colors">
               <h3 className="text-2xl font-bold text-mauve mb-4 flex items-center gap-2">
                 <span className="w-8 h-8 rounded-lg bg-mauve/20 flex items-center justify-center text-mauve">
@@ -103,8 +103,25 @@ export default function About() {
                 application, a high-performance C++ program, or assistance with
                 securing your digital assets, I have the expertise to deliver.{" "}
                 <br /> I can make websites for you, make apps, and help you in
-                your projects! <br />
+                your projects! <br /> <br />
                 But please note, I only take fees in crypto.. (Sorry)
+              </p>
+            </div>
+            <div className="glass-card p-8 hover:bg-surface0 transition-colors">
+              <h3 className="text-2xl font-bold text-peach mb-4 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-lg bg-teal/20 flex items-center justify-center text-peach">
+                  <i className="fas fa-star"></i>
+                </span>
+                My Achievements
+              </h3>
+              <p className="text-subtext1 leading-relaxed text-lg">
+                In 2025, I along with my few friends registered for AI Vidyasetu
+                Hackathon conducted by The Education Ministry of India, and KVS
+                Sangathan. We reached Zonals, which were conducted in january
+                2026. <br /> <br />
+                I have also been learning Cryptography, and basic Hacking..
+                other certificates are uploaded here. <br /> <br />I also have
+                basic knowledge and experience in Hardware, and Arduino tech.
               </p>
             </div>
           </div>
