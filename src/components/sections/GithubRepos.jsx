@@ -1,5 +1,5 @@
-import React from 'react';
-import axios from 'axios';
+import React from "react";
+import axios from "axios";
 
 export default function GithubRepos() {
   const [repos, setRepos] = React.useState([]);
@@ -8,21 +8,21 @@ export default function GithubRepos() {
     const fetchRepos = async () => {
       try {
         const response = await axios.get(
-          'https://api.github.com/users/iamdagod-kira/repos',
+          "https://api.github.com/users/iamdagod-kira/repos"
         );
         setRepos(response.data);
       } catch (error) {
-        import('sweetalert2').then(Swal =>
+        import("sweetalert2").then((Swal) =>
           Swal.default.fire({
-            icon: 'error',
-            title: 'Error',
+            icon: "error",
+            title: "Error",
             text: `Failed to fetch GitHub repositories:\n${error}`,
-            background: '#313244',
-            color: '#cdd6f4',
+            background: "#313244",
+            color: "#cdd6f4",
             buttonsStyling: false,
             customClass: {
-              confirmButton: 'bg-blue text-base px-4 py-2 rounded-lg'
-            }
+              confirmButton: "bg-blue text-base px-4 py-2 rounded-lg",
+            },
           })
         );
       }
@@ -37,7 +37,7 @@ export default function GithubRepos() {
         My GitHub Repositories
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {repos.map(repo => (
+        {repos.map((repo) => (
           <a
             key={repo.id}
             href={repo.html_url}
@@ -49,7 +49,8 @@ export default function GithubRepos() {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue to-mauve opacity-60"></div>
 
               <h3 className="text-xl font-bold text-text group-hover:text-sky transition-colors mb-3 break-words text-center md:text-left flex items-center gap-2 justify-center md:justify-start">
-                <i className="fas fa-book-open text-subtext0 group-hover:text-blue"></i> {repo.name}
+                <i className="fas fa-book-open text-subtext0 group-hover:text-blue"></i>{" "}
+                {repo.name}
               </h3>
               <p className="text-subtext1 text-sm line-clamp-3 mb-6 font-medium">
                 {repo.description || "No description available"}
@@ -60,10 +61,12 @@ export default function GithubRepos() {
                 </span>
                 <div className="flex items-center gap-4">
                   <span className="flex items-center gap-1 hover:text-yellow transition-colors">
-                    <i className="far fa-star text-sm"></i> {repo.stargazers_count}
+                    <i className="far fa-star text-sm"></i>{" "}
+                    {repo.stargazers_count}
                   </span>
                   <span className="flex items-center gap-1 hover:text-mauve transition-colors">
-                    <i className="fas fa-code-branch text-sm"></i> {repo.forks_count}
+                    <i className="fas fa-code-branch text-sm"></i>{" "}
+                    {repo.forks_count}
                   </span>
                 </div>
               </div>
