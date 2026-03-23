@@ -158,3 +158,5 @@ yarn-error.log*
 *.report.html
 
 /dist
+
+bun.lock
