@@ -15,7 +15,7 @@ export default function PopupOnHover(props) {
       >
         {props.content}
       </div>
-      {props.children}
+      {React.cloneElement(props.children, { 'aria-label': props.content })}
     </div>
   );
 }
