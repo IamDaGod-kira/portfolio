@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "portless dev vite",
     "build": "vite build",
-    "preview": "vite preview",
+    "preview": "portless preview vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "analyze:performance": "lighthouse http://localhost:4173 --view --emulated-form-factor=desktop"
