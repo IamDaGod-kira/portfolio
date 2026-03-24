@@ -8,7 +8,7 @@ export default function GithubRepos() {
     const fetchRepos = async () => {
       try {
         const response = await axios.get(
-          "https://api.github.com/users/iamdagod-kira/repos"
+          "https://api.github.com/users/cameraman-pritam/repos"
         );
         setRepos(response.data);
       } catch (error) {
@@ -33,7 +33,7 @@ export default function GithubRepos() {
 
   return (
     <div className="px-6 md:px-12 lg:px-24">
-      <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-peach to-pink font-sans tracking-tight">
+      <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center text-transparent bg-clip-text bg-linear-to-r from-peach to-pink font-sans tracking-tight">
         My GitHub Repositories
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -46,9 +46,9 @@ export default function GithubRepos() {
             className="group block h-full"
           >
             <div className="h-full p-8 glass-card hover:bg-surface0 transition-colors shadow-lg relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue to-mauve opacity-60"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-blue to-mauve opacity-60"></div>
 
-              <h3 className="text-xl font-bold text-text group-hover:text-sky transition-colors mb-3 break-words text-center md:text-left flex items-center gap-2 justify-center md:justify-start">
+              <h3 className="text-xl font-bold text-text group-hover:text-sky transition-colors mb-3 wrap-break-words text-center md:text-left flex items-center gap-2 justify-center md:justify-start">
                 <i className="fas fa-book-open text-subtext0 group-hover:text-blue"></i>{" "}
                 {repo.name}
               </h3>
